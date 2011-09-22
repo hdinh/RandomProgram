@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<project name="RandomProgram" default="build">
+
+  <!-- properties -->
+  <property name="nant.verbosity" value="false" />
+  <property name="src.dir" value="src" />
+  <property name="build.project" value="src\RandomProgram.sln" />
+  <property name="build.config" value="Release" />
+
+  <property name="build.base" value="bin" />
+  <property name="build.assemblies.dir" value="${build.base}\${build.config}\" />
+  <property name="microsoft.framework" value="net-4.0" overwrite="false" />
+
+  <!-- common path properties -->
+  <property name="src.dir" value="${path::get-full-path('.')}" />
+  <property name="tools.dir" value="${path::get-full-path('Tools')}" />
+
+  <!-- tool path properties -->
+  <property name="nunit.executable" value="${tools.dir}\NUnit\bin\net-2.0\nunit-console.exe" />
+
+  <!-- msbuild properties -->
+  <property name="msbuild" value="${framework::get-framework-directory(framework::get-target-framework())}\msbuild.exe" dynamic="true" />
+
+  <target name="build" depends="build_src,test,analyze" />
+
+  <target name="build_src" depends="clean,compile" />
+
+  <target name="clean" description="Clean up">
+    <echo message="Cleaning artifacts."/>
+    <delete dir="${build.assemblies.dir}" failonerror="false" />
+  </target>
+
+  <target name="compile" description="Compile solution">
+    <exec program="${msbuild}"
+          commandline="/p:config=${build.config} /p:OutDir=${build.assemblies.dir} ${build.project}"
+          verbose="true" />
+  </target>
+
+  <target name="test" description="Run unit tests">
+  </target>
+
+  <target name="analyze" description="Run code analysis">
+  </target>
+
+  <target name="nunit-test">
+  </target>
+</project>
