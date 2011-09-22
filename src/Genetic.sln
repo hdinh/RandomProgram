@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Genetic", "Genetic\Genetic.csproj", "{083D55A7-C3EE-4A0E-A705-EDBB646995EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Genetic.Tests", "..\tests\Genetic.Tests\Genetic.Tests.csproj", "{5C18A5A1-D525-4140-B6F0-DD163CCC182D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{878ADFC6-EF4E-4292-B684-B5C7A93860FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E03999E7-2A0E-4759-B428-4763D9CA5259}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{083D55A7-C3EE-4A0E-A705-EDBB646995EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{083D55A7-C3EE-4A0E-A705-EDBB646995EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{083D55A7-C3EE-4A0E-A705-EDBB646995EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{083D55A7-C3EE-4A0E-A705-EDBB646995EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C18A5A1-D525-4140-B6F0-DD163CCC182D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C18A5A1-D525-4140-B6F0-DD163CCC182D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C18A5A1-D525-4140-B6F0-DD163CCC182D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C18A5A1-D525-4140-B6F0-DD163CCC182D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{083D55A7-C3EE-4A0E-A705-EDBB646995EE} = {878ADFC6-EF4E-4292-B684-B5C7A93860FD}
+		{5C18A5A1-D525-4140-B6F0-DD163CCC182D} = {E03999E7-2A0E-4759-B428-4763D9CA5259}
+	EndGlobalSection
+EndGlobal
