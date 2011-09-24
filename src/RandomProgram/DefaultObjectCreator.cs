@@ -21,6 +21,10 @@
         /// <c>true</c> if this instance an object of the specified type; otherwise, <c>false</c>.
         /// </returns>
         public bool CanCreate(ExpressionCreationConditions conditions, ExpressionCreationContext context) {
+            if (context == null) {
+                throw new ArgumentNullException("context");
+            }
+
             return this.CanCreateInternal(context.RequestedReturnType);
         }
 
@@ -31,6 +35,19 @@
         /// <param name="context">The context of expression evaluation when creating expression.</param>
         /// <returns>Object of type.</returns>
         public object CreateObject(ExpressionCreationConditions conditions, ExpressionCreationContext context) {
+
+            if (conditions == null) {
+                throw new ArgumentNullException("conditions");
+            }
+
+            if (context == null) {
+                throw new ArgumentNullException("context");
+            }
+
+            if (context.RequestedReturnType == null) {
+                throw new ArgumentException("context");
+            }
+
             if (!this.TypeRepository.HasType(context.RequestedReturnType)) {
                 throw new ObjectCreationException();
             }

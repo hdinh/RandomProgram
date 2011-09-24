@@ -37,7 +37,13 @@
         }
 
         public void AddType(Type type, WeightedTypeCriteria<MethodInfo> criteria) {
-            Contract.Requires<ArgumentNullException>(criteria.Match != null);
+            if (type == null) {
+                throw new ArgumentNullException("type");
+            }
+
+            if (criteria.Match == null) {
+                throw new ArgumentNullException("criteria.Match");
+            }
 
             if (!this.typeRepository.Contains(type)) {
                 this.typeRepository.Add(type);
@@ -69,7 +75,9 @@
         }
 
         public void AddAssembly(Assembly assembly, WeightedTypeCriteria<Type> criteria) {
-            Contract.Requires<ArgumentNullException>(criteria.Match != null);
+            if (criteria.Match == null) {
+                throw new ArgumentNullException("criteria");
+            }
 
             foreach (Type type in assembly.GetTypes()) {
                 if (criteria.Match(type)) {

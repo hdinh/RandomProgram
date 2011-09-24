@@ -129,7 +129,6 @@
         }
 
         [Test]
-        [ExpectedException(typeof(ArgumentNullException))]
         public void CreateObjectWithNullContext() {
             // Arrange
             var conditions = new ExpressionCreationConditions(maxDepth: 10);
@@ -138,11 +137,13 @@
             objectCreator.TypeRepository.AddType(typeof(DateTime));
 
             // Act
-            objectCreator.CreateObject(conditions, null);
+            Assert.Throws<ArgumentNullException>(() =>
+                {
+                    objectCreator.CreateObject(conditions, null);
+                });
         }
 
         [Test]
-        [ExpectedException(typeof(ArgumentNullException))]
         public void CreateObjectWithNullConditions() {
             // Arrange
             var context = new ExpressionCreationContext { RequestedReturnType = typeof(long) };
@@ -150,23 +151,27 @@
             objectCreator.TypeRepository = GetMockRepository();
             objectCreator.TypeRepository.AddType(typeof(DateTime));
 
-            // Act
-            objectCreator.CreateObject(null, context);
+            // Act & Assert
+            Assert.Throws<ArgumentNullException>(() =>
+                {
+                    objectCreator.CreateObject(null, context);
+                });
         }
 
         [Test]
-        [ExpectedException(typeof(ArgumentNullException))]
         public void CreateTypeNullType() {
             // Arrange
             var objectCreator = new DefaultObjectCreator();
             objectCreator.TypeRepository = GetMockRepository();
 
-            // Act
-            objectCreator.TypeRepository.AddType(null);
+            // Act & Assert
+            Assert.Throws<ArgumentNullException>(() =>
+                {
+                    objectCreator.TypeRepository.AddType(null);
+                });
         }
 
         [Test]
-        [ExpectedException(typeof(ObjectCreationException))]
         public void CreateObjectWithoutAnyTypes() {
             // Arrange
             var conditions = new ExpressionCreationConditions(maxDepth: 10);
@@ -174,9 +179,11 @@
             var objectCreator = new DefaultObjectCreator();
             objectCreator.TypeRepository = GetMockRepository();
 
-            // Act
-            // Assert
-            var created = objectCreator.CreateObject(conditions, context);
+            // Act & Assert
+            Assert.Throws<ObjectCreationException>(() =>
+                {
+                    var created = objectCreator.CreateObject(conditions, context);
+                });
         }
 
         [Test]
