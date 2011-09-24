@@ -1,9 +1,6 @@
 ﻿namespace Dinh.RandomProgram.Tests
 {
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
 
     /// <summary>
     /// Convienance class that mocks IObjectCreator and allows for simple object creation.

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-2831]C:\Dev\Dinh.Genetic.11.27.10\tools\NUnit\tests\nunit.framework.tests.dll</TopNode>
+  <SelectedNode>[0-2665]NUnit.Framework.Tests.LessFixture</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-2831]C:\Dev\Dinh.Genetic.11.27.10\tools\NUnit\tests\nunit.framework.tests.dll" Expanded="true" />
+    <Node UniqueName="[0-2832]NUnit" Expanded="true" />
+    <Node UniqueName="[0-2833]NUnit.Framework" Expanded="true" />
+    <Node UniqueName="[0-2834]NUnit.Framework.Constraints" Expanded="true" />
+    <Node UniqueName="[0-1000]NUnit.Framework.Constraints.AfterConstraintTest" Expanded="true" />
+    <Node UniqueName="[0-1022]NUnit.Framework.Constraints.AndTest" Expanded="true" />
+    <Node UniqueName="[0-1913]NUnit.Framework.Constraints.AssignableFromTest" Expanded="true" />
+    <Node UniqueName="[0-1923]NUnit.Framework.Constraints.AssignableToTest" Expanded="true" />
+    <Node UniqueName="[0-1933]NUnit.Framework.Constraints.AttributeExistsConstraintTest" Expanded="true" />
+    <Node UniqueName="[0-1696]NUnit.Framework.Constraints.BinarySerializableTest" Expanded="true" />
+    <Node UniqueName="[0-1143]NUnit.Framework.Constraints.ComparerTests" Expanded="true" />
+    <Node UniqueName="[0-1270]NUnit.Framework.Constraints.EmptyConstraintTest" Expanded="true" />
+    <Node UniqueName="[0-1805]NUnit.Framework.Constraints.EndsWithTest" Expanded="true" />
+    <Node UniqueName="[0-1816]NUnit.Framework.Constraints.EndsWithTest.ProvidesProperFailureMessage" Expanded="true" />
+    <Node UniqueName="[0-1825]NUnit.Framework.Constraints.EndsWithTestIgnoringCase" Expanded="true" />
+    <Node UniqueName="[0-1299]NUnit.Framework.Constraints.EqualConstraintTest" Expanded="true" />
+    <Node UniqueName="[0-1892]NUnit.Framework.Constraints.ExactTypeTest" Expanded="true" />
+    <Node UniqueName="[0-1059]NUnit.Framework.Constraints.FalseConstraintTest" Expanded="true" />
+    <Node UniqueName="[0-1195]NUnit.Framework.Constraints.GreaterThanOrEqualTest" Expanded="true" />
+    <Node UniqueName="[0-1175]NUnit.Framework.Constraints.GreaterThanTest" Expanded="true" />
+    <Node UniqueName="[0-1903]NUnit.Framework.Constraints.InstanceOfTypeTest" Expanded="true" />
+    <Node UniqueName="[0-1233]NUnit.Framework.Constraints.LessThanOrEqualTest" Expanded="true" />
+    <Node UniqueName="[0-1213]NUnit.Framework.Constraints.LessThanTest" Expanded="true" />
+    <Node UniqueName="[0-1397]NUnit.Framework.Constraints.MsgUtilTests" Expanded="true" />
+    <Node UniqueName="[0-1075]NUnit.Framework.Constraints.NaNConstraintTest" Expanded="true" />
+    <Node UniqueName="[0-1428]NUnit.Framework.Constraints.NotTest" Expanded="true" />
+    <Node UniqueName="[0-1034]NUnit.Framework.Constraints.NullConstraintTest" Expanded="true" />
+    <Node UniqueName="[0-1287]NUnit.Framework.Constraints.NullOrEmptyStringConstraintTest" Expanded="true" />
+    <Node UniqueName="[0-1442]NUnit.Framework.Constraints.NumericsTest" Expanded="true" />
+    <Node UniqueName="[0-1476]NUnit.Framework.Constraints.OrTest" Expanded="true" />
+    <Node UniqueName="[0-1642]NUnit.Framework.Constraints.PropertyExistsTest" Expanded="true" />
+    <Node UniqueName="[0-1659]NUnit.Framework.Constraints.PropertyTest" Expanded="true" />
+    <Node UniqueName="[0-1251]NUnit.Framework.Constraints.RangeConstraintTest" Expanded="true" />
+    <Node UniqueName="[0-1676]NUnit.Framework.Constraints.ReusableConstraintTests" Expanded="true" />
+    <Node UniqueName="[0-1683]NUnit.Framework.Constraints.SameAsTest" Expanded="true" />
+    <Node UniqueName="[0-1614]NUnit.Framework.Constraints.SamePathOrUnderTest_Linux" Expanded="true" />
+    <Node UniqueName="[0-1591]NUnit.Framework.Constraints.SamePathOrUnderTest_Windows" Expanded="true" />
+    <Node UniqueName="[0-1506]NUnit.Framework.Constraints.SamePathTest_Linux" Expanded="true" />
+    <Node UniqueName="[0-1487]NUnit.Framework.Constraints.SamePathTest_Windows" Expanded="true" />
+    <Node UniqueName="[0-1765]NUnit.Framework.Constraints.StartsWithTest" Expanded="true" />
+    <Node UniqueName="[0-1785]NUnit.Framework.Constraints.StartsWithTestIgnoringCase" Expanded="true" />
+    <Node UniqueName="[0-1558]NUnit.Framework.Constraints.SubPathTest_Linux" Expanded="true" />
+    <Node UniqueName="[0-1528]NUnit.Framework.Constraints.SubPathTest_Windows" Expanded="true" />
+    <Node UniqueName="[0-1727]NUnit.Framework.Constraints.SubstringTest" Expanded="true" />
+    <Node UniqueName="[0-1747]NUnit.Framework.Constraints.SubstringTestIgnoringCase" Expanded="true" />
+    <Node UniqueName="[0-1845]NUnit.Framework.Constraints.ThrowsConstraintTest_ExactType" Expanded="true" />
+    <Node UniqueName="[0-1858]NUnit.Framework.Constraints.ThrowsConstraintTest_InstanceOfType" Expanded="true" />
+    <Node UniqueName="[0-1872]NUnit.Framework.Constraints.ThrowsConstraintTest_WithConstraint" Expanded="true" />
+    <Node UniqueName="[0-1043]NUnit.Framework.Constraints.TrueConstraintTest" Expanded="true" />
+    <Node UniqueName="[0-1710]NUnit.Framework.Constraints.XmlSerializableTest" Expanded="true" />
+    <Node UniqueName="[0-2835]NUnit.Framework.Syntax" Expanded="true" />
+    <Node UniqueName="[0-2092]NUnit.Framework.Syntax.InvalidCodeTests" Expanded="true" />
+    <Node UniqueName="[0-2836]NUnit.Framework.Tests" Expanded="true" />
+    <Node UniqueName="[0-2652]NUnit.Framework.Tests.GreaterFixture" Expanded="true" />
+    <Node UniqueName="[0-2665]NUnit.Framework.Tests.LessFixture" Expanded="true" />
+    <Node UniqueName="[0-2771]NUnit.Framework.Tests.ValuesAttributeTests" Expanded="true" />
+  </Nodes>
+</VisualState>

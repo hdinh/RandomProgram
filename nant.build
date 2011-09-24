@@ -7,19 +7,19 @@
   <property name="build.project" value="src\RandomProgram.sln" />
   <property name="build.config" value="Release" />
 
-  <property name="build.base" value="bin" />
-  <property name="build.assemblies.dir" value="${build.base}\${build.config}\" />
-  <property name="microsoft.framework" value="net-4.0" overwrite="false" />
-
   <!-- common path properties -->
   <property name="src.dir" value="${path::get-full-path('.')}" />
   <property name="tools.dir" value="${path::get-full-path('Tools')}" />
 
   <!-- tool path properties -->
-  <property name="nunit.executable" value="${tools.dir}\NUnit\bin\net-2.0\nunit-console.exe" />
+  <property name="nunit.executable" value="${tools.dir}\NUnit\nunit-console.exe" />
 
   <!-- msbuild properties -->
   <property name="msbuild" value="${framework::get-framework-directory(framework::get-target-framework())}\msbuild.exe" dynamic="true" />
+
+  <property name="build.base" value="bin" />
+  <property name="build.assemblies.dir" value="${src.dir}\${build.base}\${build.config}\" />
+  <property name="microsoft.framework" value="net-4.0" overwrite="false" />
 
   <target name="build" depends="build_src,test,analyze" />
 
@@ -37,11 +37,14 @@
   </target>
 
   <target name="test" description="Run unit tests">
+    <exec program="${nunit.executable}" verbose="true">
+      <arg value="${build.assemblies.dir}/Dinh.RandomProgram.Tests.dll" />
+      <arg value="/labels" />
+      <arg value="/nologo" />
+    </exec>
   </target>
 
   <target name="analyze" description="Run code analysis">
   </target>
 
-  <target name="nunit-test">
-  </target>
 </project>
